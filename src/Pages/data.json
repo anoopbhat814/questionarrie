@@ -1,0 +1,574 @@
+{
+  "schemaVersion": "2022-11-01",
+  "name": "Custom Assessment5",
+  "description": "This is a custom description for anything",
+  "pillars": [
+    {
+      "id": "100",
+      "description": "The goal for modern application delivery is responsiveness, which relies on flexible scheduling, limiting work in process in favor of iterative experiments, and close team collaboration to facilitate real-time communication and eliminate wasteful handoffs. High performers have multidisciplinary feature crews who pull from a common product-backlog, minimize work in process, and deliver work ready to deploy live at the end of each sprint. ",
+      "name": "Org Adoption",
+      "questions": [
+        {
+          "id": "1",
+          "title": "How do you plan, prioritize and schedule work?",
+          "choices": [
+            {
+              "id": "choice_0",
+              "title": "By feature completion against spec"
+            },
+            {
+              "id": "choice_1",
+              "title": "In timeboxes such as sprints"
+            },
+            {
+              "id": "choice_2",
+              "title": "We strive for a one-piece flow of product backlog items, stack-ranked, and delivered continuously"
+            },
+            {
+              "id": "choice_3",
+              "title": "We create measurable experiments from hypotheses and use production data to assess results"
+            },
+            {
+              "id": "choice_4",
+              "title": "None of these"
+            }
+          ],
+          "riskRules": [
+            {
+              "condition": "(!choice_0)",
+              "risk": "HIGH_RISK"
+            },
+            {
+              "condition": "(!choice_1) || (!choice_2) || (!choice_3) ",
+              "risk": "MEDIUM_RISK"
+            },
+            {
+              "condition": "default",
+              "risk": "LOW_RISK"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "title": "How do development and operations teams collaborate during a production issue",
+          "choices": [
+            {
+              "id": "choice_0",
+              "title": "Production incidents are handled by operations staff. Only If all operational procedures have failed to restore service level, then an escalation process may be started on an exception basis to engage developers"
+            },
+            {
+              "id": "choice_1",
+              "title": "Devs and Ops do a joint retrospective to review the root cause of an issue once it's resolved. They plan how to prevent a recurrence"
+            },
+            {
+              "id": "choice_2",
+              "title": "They collaborate in real time, in a physical team room/war room or online chat room, IRC, IM, or other messaging channel"
+            },
+            {
+              "id": "choice_3",
+              "title": "Developers rotate on-call duty and, when on duty, are paged to participate without delay in troubleshooting live site incidents related to their area of code"
+            },
+            {
+              "id": "choice_4",
+              "title": "None of these"
+            }
+          ],
+          "riskRules": [
+            {
+              "condition": "(!choice_0)|| (!choice_1)",
+              "risk": "HIGH_RISK"
+            },
+            {
+              "condition": "(!choice_2) || (!choice_3) ",
+              "risk": "MEDIUM_RISK"
+            },
+            {
+              "condition": "default",
+              "risk": "LOW_RISK"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "title": "How do you plan, prioritize and schedule work?",
+          "choices": [
+            {
+              "id": "choice_0",
+              "title": "By feature completion against spec"
+            },
+            {
+              "id": "choice_1",
+              "title": "In timeboxes such as sprints"
+            },
+            {
+              "id": "choice_2",
+              "title": "We strive for a one-piece flow of product backlog items, stack-ranked, and delivered continuously"
+            },
+            {
+              "id": "choice_3",
+              "title": "We create measurable experiments from hypotheses and use production data to assess results"
+            },
+            {
+              "id": "choice_4",
+              "title": "None of these"
+            }
+          ],
+          "riskRules": [
+            {
+              "condition": "(!choice_0)",
+              "risk": "HIGH_RISK"
+            },
+            {
+              "condition": "(!choice_1) || (!choice_2) || (!choice_3) ",
+              "risk": "MEDIUM_RISK"
+            },
+            {
+              "condition": "default",
+              "risk": "LOW_RISK"
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "title": "How do you plan, prioritize and schedule work?",
+          "choices": [
+            {
+              "id": "choice_0",
+              "title": "By feature completion against spec"
+            },
+            {
+              "id": "choice_1",
+              "title": "In timeboxes such as sprints"
+            },
+            {
+              "id": "choice_2",
+              "title": "We strive for a one-piece flow of product backlog items, stack-ranked, and delivered continuously"
+            },
+            {
+              "id": "choice_3",
+              "title": "We create measurable experiments from hypotheses and use production data to assess results"
+            },
+            {
+              "id": "choice_4",
+              "title": "None of these"
+            }
+          ],
+          "riskRules": [
+            {
+              "condition": "(!choice_0)",
+              "risk": "HIGH_RISK"
+            },
+            {
+              "condition": "(!choice_1) || (!choice_2) || (!choice_3) ",
+              "risk": "MEDIUM_RISK"
+            },
+            {
+              "condition": "default",
+              "risk": "LOW_RISK"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "101",
+      "name": "Platform Engineering Capabiities",
+      "questions": [
+        {
+          "id": "1",
+          "title": "Which of the following platform engineering capabilities does your organization have?",
+          "description": "The goal ",
+          "choices": [
+            {
+              "id": "choice_0",
+              "title": "Infrastructure as code"
+            },
+            {
+              "id": "choice_1",
+              "title": "Configuration management"
+            },
+            {
+              "id": "choice_2",
+              "title": "Continuous integration and delivery"
+            },
+            {
+              "id": "choice_3",
+              "title": "Containerization, Monitoring and logging"
+            },
+            {
+              "id": "choice_4",
+              "title": "None of these"
+            }
+          ],
+          "riskRules": [
+            {
+              "condition": "(!choice_0) || (!choice_1) || (!choice_2) || (!choice_3) ",
+              "risk": "HIGH_RISK"
+            },
+            {
+              "condition": "default",
+              "risk": "LOW_RISK"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "title": "Which of the following best describes your cloud security posture?",
+          "description": "",
+          "choices": [
+            {
+              "id": "choice_0",
+              "title": "We have a dedicated in-house security team responsible for cloud security"
+            },
+            {
+              "id": "choice_1",
+              "title": "We have a mix of in-house and external security experts responsible for cloud security"
+            },
+            {
+              "id": "choice_2",
+              "title": "We rely on the cloud provider's security measures and do not have a dedicated security team"
+            },
+            {
+              "id": "choice_3",
+              "title": "We do not have a dedicated security team and do not feel confident in our cloud security posture"
+            },
+            {
+              "id": "choice_4",
+              "title": "None of these"
+            }
+          ],
+          "riskRules": [
+            {
+              "condition": "(!choice_0) || (!choice_1) || (!choice_2) || (!choice_3) ",
+              "risk": "HIGH_RISK"
+            },
+            {
+              "condition": "default",
+              "risk": "NO_RISK"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "102",
+      "name": "Development Capabilities",
+      "questions": [
+        {
+          "id": "1",
+          "title": "Which of the following development capabilities does your organization have?",
+          "description": "",
+          "choices": [
+            {
+              "id": "choice_0",
+              "title": "Agile development methodologies"
+            },
+            {
+              "id": "choice_1",
+              "title": "Test-driven development"
+            },
+            {
+              "id": "choice_2",
+              "title": "Continuous integration and delivery"
+            },
+            {
+              "id": "choice_3",
+              "title": "There is a cross functional team from leaders in application, infrastrtructure, security and other domains"
+            },
+            {
+              "id": "choice_4",
+              "title": "None of these"
+            }
+          ],
+          "riskRules": [
+            {
+              "condition": "(!choice_0) || (!choice_1) || (!choice_2) || (!choice_3) ",
+              "risk": "HIGH_RISK"
+            },
+            {
+              "condition": "default",
+              "risk": "NO_RISK"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "title": "Which agile development methodologies does your organization use?",
+          "description": "The goal ",
+          "choices": [
+            {
+              "id": "choice_0",
+              "title": "Scrum"
+            },
+            {
+              "id": "choice_1",
+              "title": "Kanban"
+            },
+            {
+              "id": "choice_2",
+              "title": "There is a cross functional team from leaders in application, infrastrtructure, security and other domains"
+            },
+            {
+              "id": "choice_3",
+              "title": "Lean, Extreme Programming"
+            },
+            {
+              "id": "choice_4",
+              "title": "None of these"
+            }
+          ],
+          "riskRules": [
+            {
+              "condition": "(!choice_0) || (!choice_1) || (!choice_2) || (!choice_3) ",
+              "risk": "HIGH_RISK"
+            },
+            {
+              "condition": "default",
+              "risk": "NO_RISK"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "103",
+      "name": "Quality Assurance",
+      "questions": [
+        {
+          "id": "1",
+          "title": "Which of the following quality assurance practices does your organization have?",
+          "description": "The goal ",
+          "choices": [
+            {
+              "id": "choice_0",
+              "title": "Automated Testing"
+            },
+            {
+              "id": "choice_1",
+              "title": "Manual testing"
+            },
+            {
+              "id": "choice_2",
+              "title": "Test-driven development"
+            },
+            {
+              "id": "choice_3",
+              "title": "There is a cross functional team from leaders in application, infrastrtructure, security and other domains"
+            },
+            {
+              "id": "choice_4",
+              "title": "None of these"
+            }
+          ],
+          "riskRules": [
+            {
+              "condition": "(!choice_0) || (!choice_1) || (!choice_2) || (!choice_3) ",
+              "risk": "HIGH_RISK"
+            },
+            {
+              "condition": "default",
+              "risk": "NO_RISK"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "title": "Process and Agility",
+          "description": "The goal ",
+          "choices": [
+            {
+              "id": "choice_0",
+              "title": "This is a singular business sponsor that ensures KPIs and objectives are directly aligned to company's business goals"
+            },
+            {
+              "id": "choice_1",
+              "title": "There is a cross functional team from leaders in application, infrastrtructure, security and other domains"
+            },
+            {
+              "id": "choice_2",
+              "title": "There is a cross functional team from leaders in application, infrastrtructure, security and other domains"
+            },
+            {
+              "id": "choice_3",
+              "title": "There is a cross functional team from leaders in application, infrastrtructure, security and other domains"
+            },
+            {
+              "id": "choice_4",
+              "title": "None of these"
+            }
+          ],
+          "riskRules": [
+            {
+              "condition": "(!choice_0) || (!choice_1) || (!choice_2) || (!choice_3) ",
+              "risk": "HIGH_RISK"
+            },
+            {
+              "condition": "default",
+              "risk": "NO_RISK"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "104",
+      "name": "Automated Governance",
+      "questions": [
+        {
+          "id": "1",
+          "title": "Process and Agility",
+          "description": "The goal ",
+          "choices": [
+            {
+              "id": "choice_0",
+              "title": "This is a singular business sponsor that ensures KPIs and objectives are directly aligned to company's business goals"
+            },
+            {
+              "id": "choice_1",
+              "title": "There is a cross functional team from leaders in application, infrastrtructure, security and other domains"
+            },
+            {
+              "id": "choice_2",
+              "title": "There is a cross functional team from leaders in application, infrastrtructure, security and other domains"
+            },
+            {
+              "id": "choice_3",
+              "title": "There is a cross functional team from leaders in application, infrastrtructure, security and other domains"
+            },
+            {
+              "id": "choice_4",
+              "title": "None of these"
+            }
+          ],
+          "riskRules": [
+            {
+              "condition": "(!choice_0) || (!choice_1) || (!choice_2) || (!choice_3) ",
+              "risk": "HIGH_RISK"
+            },
+            {
+              "condition": "default",
+              "risk": "NO_RISK"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "title": "Which tools does your organization use for code review?",
+          "description": "The goal ",
+          "choices": [
+            {
+              "id": "choice_0",
+              "title": "Github"
+            },
+            {
+              "id": "choice_1",
+              "title": "Gitlab"
+            },
+            {
+              "id": "choice_2",
+              "title": "Bitbucket"
+            },
+            {
+              "id": "choice_3",
+              "title": "SVN"
+            },
+            {
+              "id": "choice_4",
+              "title": "None of these"
+            }
+          ],
+          "riskRules": [
+            {
+              "condition": "(!choice_0) || (!choice_1) || (!choice_2) || (!choice_3) ",
+              "risk": "HIGH_RISK"
+            },
+            {
+              "condition": "default",
+              "risk": "NO_RISK"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "105",
+      "name": "Observability",
+      "questions": [
+        {
+          "id": "1",
+          "title": "Which of the following observability practices does your organization have?",
+          "description": " ",
+          "choices": [
+            {
+              "id": "choice_0",
+              "title": "Monitoring"
+            },
+            {
+              "id": "choice_1",
+              "title": "Logging"
+            },
+            {
+              "id": "choice_2",
+              "title": "Metrics"
+            },
+            {
+              "id": "choice_3",
+              "title": "Alerting"
+            },
+            {
+              "id": "choice_4",
+              "title": "None of these"
+            }
+          ],
+          "riskRules": [
+            {
+              "condition": "(!choice_0) || (!choice_1) || (!choice_2) || (!choice_3) ",
+              "risk": "HIGH_RISK"
+            },
+            {
+              "condition": "default",
+              "risk": "NO_RISK"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "title": "Which tools does your organization use for monitoring?",
+          "description": "The goal ",
+          "choices": [
+            {
+              "id": "choice_0",
+              "title": "Prometheus"
+            },
+            {
+              "id": "choice_1",
+              "title": "Grafana"
+            },
+            {
+              "id": "choice_2",
+              "title": "New Relic"
+            },
+            {
+              "id": "choice_3",
+              "title": "AppDynamics"
+            },
+            {
+              "id": "choice_4",
+              "title": "None of these"
+            }
+          ],
+          "riskRules": [
+            {
+              "condition": "(!choice_0) || (!choice_1) || (!choice_2) || (!choice_3) ",
+              "risk": "HIGH_RISK"
+            },
+            {
+              "condition": "default",
+              "risk": "NO_RISK"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

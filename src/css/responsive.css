@@ -1,0 +1,17 @@
+@media screen  and (max-width:767px) {
+    body .header_outer h1{font-size: 18px;}   
+    .menu_links {padding-left: 10px;}
+    p {font-size: 15px;line-height: 24px;}
+    .logo {padding-right: 10px;}
+    .menu_links p{line-height: 16px;font-size: 14px;}
+    .h2, h2 {font-size: 22px;}
+    .heading_bg {padding: 15px 20px;}
+    .ability_sec {padding: 15px 0;}
+    .bullet_list li {font-size: 15px;}   
+    .bg_style {padding: 20px 20px 30px;display: inline-block;margin-top: 20px;}   
+    .col-md-4.col-sm-12.bg_style {width: 100%;background: transparent;}
+    .sidebar_links {background: #fff;padding: 20px;}
+    .ask_btn {margin-top: 10px;display: inline-block; }
+    .logo img { max-width: 60px;}
+    .bg_inside {overflow: auto;}
+    }
